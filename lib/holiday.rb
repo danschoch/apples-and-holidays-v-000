@@ -33,7 +33,7 @@ def add_supply_to_memorial_day(holiday_hash, supply)
 end
 
 def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_array)
-  holiday_hash[season.to_sym][holiday_name.to_sym][supply_array]
+  holiday_hash[season.to_sym][holiday_name.to_sym] = supply_array
   holiday_hash
 end
 
