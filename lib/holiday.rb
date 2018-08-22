@@ -54,11 +54,9 @@ def all_supplies_in_holidays(holiday_hash)
     holiday.each do |holiday, supplies|
       @hol_string = holiday.to_s.split("_").map{|word| word.capitalize}.join(" ")
       @sup_string = supplies.join(", ")
-      puts ""
-      
+      puts "#{@hol_string}: #{@sup_string}"
     end
-    
-
+  end
 end
 
 def all_holidays_with_bbq(holiday_hash)
